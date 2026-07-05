@@ -1,0 +1,12 @@
+{
+  "sdk": {
+    "version": "10.0.301",
+    "rollForward": "latestPatch",
+    "allowPrerelease": false
+  },
+  "comments": [
+    "Força o uso do .NET SDK 10.0 estável em vez do SDK 11 Preview.",
+    "O SDK 11 Preview gera o aviso NETSDK1057 e pode introduzir incompatibilidades.",
+    "Altere 'allowPrerelease' para true apenas para testes experimentais."
+  ]
+}

@@ -1,0 +1,82 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+
+# ─────────────────────────────────────────────────────────────────────────────
+# PROJETO 1: SintelAula.App — Core da aplicação WinUI 3 (empacotado via MSIX)
+# ─────────────────────────────────────────────────────────────────────────────
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SintelAula.App", "src\SintelAula.App\SintelAula.App.csproj", "{A1B2C3D4-0001-0001-0001-000000000001}"
+EndProject
+
+# ─────────────────────────────────────────────────────────────────────────────
+# PROJETO 2: SintelAula.Installer — Instalador visual WinUI 3 (Single-File .exe)
+# ─────────────────────────────────────────────────────────────────────────────
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SintelAula.Installer", "src\SintelAula.Installer\SintelAula.Installer.csproj", "{A1B2C3D4-0002-0002-0002-000000000002}"
+EndProject
+
+# ─────────────────────────────────────────────────────────────────────────────
+# PROJETO 3: SintelAula.Package — Manifesto MSIX / Package.appxmanifest
+#            (Empacotamento manual via MSIX Packaging Tool — sem script de build)
+# ─────────────────────────────────────────────────────────────────────────────
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SintelAula.Package", "src\SintelAula.Package\SintelAula.Package.csproj", "{A1B2C3D4-0003-0003-0003-000000000003}"
+EndProject
+
+# ─────────────────────────────────────────────────────────────────────────────
+# PROJETO 4: MinhaEscolaWinUI — Módulo complementar WinUI 3
+# ─────────────────────────────────────────────────────────────────────────────
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinhaEscolaWinUI", "src\MinhaEscolaWinUI\MinhaEscolaWinUI.csproj", "{A1B2C3D4-0004-0004-0004-000000000004}"
+EndProject
+
+# ─────────────────────────────────────────────────────────────────────────────
+# PASTA DE SOLUÇÃO: Scripts de Build
+# ─────────────────────────────────────────────────────────────────────────────
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{A1B2C3D4-9999-9999-9999-000000000099}"
+    ProjectSection(SolutionItems) = preProject
+        build.ps1 = build.ps1
+        build_msix_store.ps1 = build_msix_store.ps1
+        publish_and_update.ps1 = publish_and_update.ps1
+    EndProjectSection
+EndProject
+
+Global
+    GlobalSection(SolutionConfigurationPlatforms) = preSolution
+        Debug|x64   = Debug|x64
+        Release|x64 = Release|x64
+    EndGlobalSection
+
+    GlobalSection(ProjectConfigurationPlatforms) = postSolution
+        # SintelAula.App
+        {A1B2C3D4-0001-0001-0001-000000000001}.Debug|x64.ActiveCfg   = Debug|x64
+        {A1B2C3D4-0001-0001-0001-000000000001}.Debug|x64.Build.0      = Debug|x64
+        {A1B2C3D4-0001-0001-0001-000000000001}.Release|x64.ActiveCfg  = Release|x64
+        {A1B2C3D4-0001-0001-0001-000000000001}.Release|x64.Build.0    = Release|x64
+
+        # SintelAula.Installer
+        {A1B2C3D4-0002-0002-0002-000000000002}.Debug|x64.ActiveCfg   = Debug|x64
+        {A1B2C3D4-0002-0002-0002-000000000002}.Debug|x64.Build.0      = Debug|x64
+        {A1B2C3D4-0002-0002-0002-000000000002}.Release|x64.ActiveCfg  = Release|x64
+        {A1B2C3D4-0002-0002-0002-000000000002}.Release|x64.Build.0    = Release|x64
+
+        # SintelAula.Package
+        {A1B2C3D4-0003-0003-0003-000000000003}.Debug|x64.ActiveCfg   = Debug|x64
+        {A1B2C3D4-0003-0003-0003-000000000003}.Debug|x64.Build.0      = Debug|x64
+        {A1B2C3D4-0003-0003-0003-000000000003}.Release|x64.ActiveCfg  = Release|x64
+        {A1B2C3D4-0003-0003-0003-000000000003}.Release|x64.Build.0    = Release|x64
+
+        # MinhaEscolaWinUI
+        {A1B2C3D4-0004-0004-0004-000000000004}.Debug|x64.ActiveCfg   = Debug|x64
+        {A1B2C3D4-0004-0004-0004-000000000004}.Debug|x64.Build.0      = Debug|x64
+        {A1B2C3D4-0004-0004-0004-000000000004}.Release|x64.ActiveCfg  = Release|x64
+        {A1B2C3D4-0004-0004-0004-000000000004}.Release|x64.Build.0    = Release|x64
+    EndGlobalSection
+
+    GlobalSection(SolutionProperties) = preSolution
+        HideSolutionNode = FALSE
+    EndGlobalSection
+
+    GlobalSection(ExtensibilityGlobals) = postSolution
+        SolutionGuid = {A1B2C3D4-FFFF-FFFF-FFFF-000000000000}
+    EndGlobalSection
+EndGlobal

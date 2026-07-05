@@ -1,0 +1,73 @@
+## OS-specific files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+## Visual Studio Cache and local settings
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## Build outputs
+[Db]in/
+[Ob]j/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+ARM/
+ARM64/
+[Tt]est[Rr]esults/
+
+## Specific SintelAula build outputs and test directories
+/Testar .exe/
+/msix/
+/staging/
+/publish/
+/SintelAula.Installer/bin/
+/SintelAula.Installer/obj/
+/SintelAula.App/bin/
+/SintelAula.App/obj/
+/SintelAula.Package/bin/
+/SintelAula.Package/obj/
+/MinhaEscolaWinUI/bin/
+/MinhaEscolaWinUI/obj/
+
+## Log and temporary files
+*.log
+*.tmp
+*.txt
+!/README.md
+!/LICENSE
+!/assets/**/*.txt
+build_detailed.log
+build_diag.log
+build_full.log
+build_out.txt
+build_out_utf8.txt
+msbuild.log
+msbuild_diag.log
+compiler_out.txt
+crash.log
+err.txt
+out.txt
+stdout.log
+stderr.log
+ocr_test_report.txt
+class_test_report.txt
+
+## NuGet packages
+*.nuget.props
+*.nuget.targets
+packages/
+project.lock.json
+project.assets.json
+
+## Rider / JetBrains
+.idea/
+*.sln.iml
+
+## VS Code
+.vscode/
